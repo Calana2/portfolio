@@ -1,0 +1,12 @@
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-250%);
+  }
+}
+
+.modal {
+  animation: slideUp 0.2s ease-out forwards;
+}
