@@ -65,7 +65,7 @@ function App() {
                     "@media:(minWidth:768px)":"flexGrow:0.90",
                   }}      
        >
-        <CVDownloader/>
+     { window.innerWidth <= 768 && <CVDownloader/> }
        </nav>
        {/* MAIN CONTENT DIV*/}
        <section className="flex flex-col md:flex-row"
@@ -115,12 +115,13 @@ function App() {
          >
         </div>
          {/* CONTENEDOR CUADRO RESUMEN */}
-         <div className="flex justify-center items-top md:items-center"
+         <div className="flex justify-center items-top md:p-5"
              style={{flexGrow:"0.80",
                      "@media:(minWidth:768px)":"flexGrow:0.80",
                    }}      
          > 
           <PrincipalText/>
+          { window.innerWidth > 768 && <CVDownloader/> }
          </div>
 
          {/* RELLENO */}
