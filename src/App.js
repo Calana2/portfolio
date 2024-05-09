@@ -1,5 +1,6 @@
 import './App.css';
 import ContactBlock from './componentes/contactBlock';
+import CVDownloader from './componentes/cvDownloader';
 import PrincipalText from './componentes/principalText';
 import RoundedImg from './componentes/roundedImg';
 import SvgLink from './componentes/svgLink';
@@ -7,9 +8,13 @@ import TopText from './componentes/topText';
 
 /*  MODELO FLEXBOX 
   *  HEADER
+  *
+  *   PROJECTS
+  *   ASSOCIATED
+  *   ABOUT ME
   *  MAIN
-  *   LEFT nav
-  *   SECTION
+  *   LEFT NAV
+  *   SECTION (HERO)
   *    LEFT SECTION
   *     RELLENO
   *     FOTO
@@ -19,7 +24,7 @@ import TopText from './componentes/topText';
   *     RELLENO
   *      TEXTO
   *     RELLENO
-  *  FOOTER
+  *  FOOTER (CONTACT)
   *  */
 
 
@@ -36,11 +41,15 @@ function App() {
     >
 
      {/* SECCION 1 - HEADER*/}
-     <header className="flex-grow flex items-center justify-center"
+     <header className="flex-grow flex"
           style={{flexGrow:"0.08",
                   "@media:(minWidth:768px)":"flexGrow:0.10",
                  }}
      >
+      <TopText text="Blog" />
+      <TopText text="Projects" />
+      <TopText text="Associated" />
+      <TopText text="About Me" />
      </header>
 
 
@@ -50,12 +59,13 @@ function App() {
                   "@media:(minWidth:768px)":"flexGrow:0.90",
           }}
      >
-       {/* LEFT nav DIV*/}
-       <nav className=""
+       {/* LEFT NAV DIV*/}
+       <nav className="flex justify-center items-center"
             style={{flexGrow:"0.07",
                     "@media:(minWidth:768px)":"flexGrow:0.90",
                   }}      
        >
+        <CVDownloader/>
        </nav>
        {/* MAIN CONTENT DIV*/}
        <section className="flex flex-col md:flex-row"
@@ -79,7 +89,8 @@ function App() {
           </div>
           {/* TECNOLOGIAS */}
           <div className="h-1/3 flex items-center justify-center">
-           <div className="absolute flex gap-2">
+    {/* absolute */}
+           <div className="flex gap-2">
             <SvgLink src="../typescript.svg" alt="typescript" link="https://typescriptlang.org"/> 
             <SvgLink src="../react.svg" alt="react" link="https://react.dev"/> 
             <SvgLink src="../nextjs.svg" alt="next" link="https://nextjs.org"/> 
@@ -104,7 +115,7 @@ function App() {
          >
         </div>
          {/* CONTENEDOR CUADRO RESUMEN */}
-         <div className="flex items-center justify-center"
+         <div className="flex justify-center items-top md:items-center"
              style={{flexGrow:"0.80",
                      "@media:(minWidth:768px)":"flexGrow:0.80",
                    }}      
