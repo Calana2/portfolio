@@ -1,0 +1,21 @@
+.principalText{
+  animation: customPulse 0.5s linear infinite;
+}
+
+@keyframes customPulse {
+  0% {
+    border-width: 2px;
+  }
+
+  25% {
+    border-width: 4px;
+  }
+
+  50% {
+    border-width: 6px;
+  }
+
+  100% {
+    border-width: 2px;
+  }
+}

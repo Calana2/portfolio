@@ -1,5 +1,28 @@
 import './App.css';
 import ContactBlock from './componentes/contactBlock';
+import PrincipalText from './componentes/principalText';
+import RoundedImg from './componentes/roundedImg';
+import SvgLink from './componentes/svgLink';
+import TopText from './componentes/topText';
+
+/*  MODELO FLEXBOX 
+  *  HEADER
+  *  MAIN
+  *   LEFT nav
+  *   SECTION
+  *    LEFT SECTION
+  *     RELLENO
+  *     FOTO
+  *     TECNOLOGIAS
+  *     RELLENO
+  *    RIGHT SECTION
+  *     RELLENO
+  *      TEXTO
+  *     RELLENO
+  *  FOOTER
+  *  */
+
+
 
 function App() {
   return (
@@ -13,9 +36,9 @@ function App() {
     >
 
      {/* SECCION 1 - HEADER*/}
-     <header className="flex-grow"
+     <header className="flex-grow flex items-center justify-center"
           style={{flexGrow:"0.08",
-                  "@media:(min-width:768px)":"flexGrow:0.10",
+                  "@media:(minWidth:768px)":"flexGrow:0.10",
                  }}
      >
      </header>
@@ -24,22 +47,80 @@ function App() {
      {/* SECCION 2 */}
      <div className="flex flex-col md:flex-row"
           style={{flexGrow:"0.92",
-                  "@media:(min-width:768px)":"flexGrow:0.90",
+                  "@media:(minWidth:768px)":"flexGrow:0.90",
           }}
      >
-       {/* LEFT NAVBAR DIV*/}
-       <navbar className=""
+       {/* LEFT nav DIV*/}
+       <nav className=""
             style={{flexGrow:"0.07",
-                    "@media:(min-width:768px)":"flexGrow:0.90",
+                    "@media:(minWidth:768px)":"flexGrow:0.90",
                   }}      
        >
-       </navbar>
+       </nav>
        {/* MAIN CONTENT DIV*/}
-       <section className=""
+       <section className="flex flex-col md:flex-row"
             style={{flexGrow:"0.93",
-                    "@media:(min-width:768px)":"flexGrow:0.90",
+                    "@media:(minWidth:768px)":"flexGrow:0.90",
                   }}      
        >
+        {/* RESUMEN */}
+         {/* PARTE IZQUIERDA */}
+         <div className="flex flex-col"
+             style={{flexGrow:"0.40",
+                     "@media:(minWidth:768px)":"flexGrow:0.40",
+                   }}      
+         >
+          
+          {/* RELLENO */}
+          <div className="h-1/6 flex"> </div>
+          {/* FOTO */}
+          <div className="h-1/2 flex items-center justify-center">
+           <RoundedImg src="../lain.jpg" alt={"gatos"}/>
+          </div>
+          {/* TECNOLOGIAS */}
+          <div className="h-1/3 flex items-center justify-center">
+           <div className="absolute flex gap-2">
+            <SvgLink src="../typescript.svg" alt="typescript" link="https://typescriptlang.org"/> 
+            <SvgLink src="../react.svg" alt="react" link="https://react.dev"/> 
+            <SvgLink src="../nextjs.svg" alt="next" link="https://nextjs.org"/> 
+            <SvgLink src="../tailwindcss.svg" alt="tailwind" link="https://tailwindcomponents.com"/> 
+           </div>
+          </div>
+          {/* RELLENO */}
+          <div className="h-1/6 flex"></div>
+         </div>
+
+         {/* PARTE DERECHA */}
+        <div className="flex md:flex-col"
+             style={{flexGrow:"0.60",
+                     "@media:(minWidth:768px)":"flexGrow:0.60",
+                   }}      
+        >
+         {/* RELLENO */}
+         <div className=""
+             style={{flexGrow:"0.10",
+                     "@media:(minWidth:768px)":"flexGrow:0.10",
+                   }}      
+         >
+        </div>
+         {/* CONTENEDOR CUADRO RESUMEN */}
+         <div className="flex items-center justify-center"
+             style={{flexGrow:"0.80",
+                     "@media:(minWidth:768px)":"flexGrow:0.80",
+                   }}      
+         > 
+          <PrincipalText/>
+         </div>
+
+         {/* RELLENO */}
+         <div className=""
+             style={{flexGrow:"0.10",
+                     "@media:(minWidth:768px)":"flexGrow:0.10",
+                   }}      
+         >
+         </div>
+        </div>
+       
        </section>
      </div> 
     </div>
@@ -52,10 +133,11 @@ function App() {
                 }}
      >
       <ContactBlock/>
-      <span className="font-serif italic font-semibold">Protoncala@proton.me</span>
+      <span className="font-serif italic font-semibold text-white">Protoncala@proton.me</span>
     </footer>
 </div>
   );
 }
 
 export default App;
+       
