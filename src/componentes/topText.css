@@ -1,0 +1,79 @@
+.desplegar {
+ position: absolute;
+ top: 10vh;
+ left: 5vw;
+ width: 90vw;
+ height: 80vh;
+ z-index: 20;
+ border-width: 2px;
+ border-color: rgb(168,85,247);
+ background-color:black;
+ animation: desplegarK 0.5s forwards;
+}
+
+.replegar {
+ position: absolute;
+ top: 10vh;
+ left: 5vw;
+ width: 90vw;
+ height: 90vh;
+ z-index: 20;
+ border-width: 2px;
+ border-color: rgb(168,85,247);
+ background-color:black;
+ animation: replegarK 0.5s forwards;
+}
+
+@keyframes desplegarK{
+  from {
+   height:0vh;
+  }
+  to {
+   height:90vh;
+   border-width:2px;
+  }
+}
+
+@keyframes replegarK{
+  to {
+   height:0;
+   border-width:0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .desplegar {
+    left:0px;
+    width: 100vw;
+    height: 80vh;
+    animation: desplegarKM 0.5s forwards;
+  }
+
+  .replegar {
+    left:0px;
+    width: 100vw;
+    height: 80vh;
+    animation: replegarKM 0.5s forwards;
+  }
+}
+
+@keyframes desplegarKM{
+  from {
+   height:0vh;
+  }
+  to {
+   height:80vh;
+   border-width:2px;
+  }
+}
+
+@keyframes replegarKM{
+  to {
+   height:0;
+   border-width:0px;
+  }
+}
+
+
+
+

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './modal.css'
+import './svgEmail.css'
 
 export default function SvgEmail({ src, alt, email }){
  const [modal,setModal] = useState(false);

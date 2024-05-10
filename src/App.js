@@ -1,4 +1,5 @@
 import './App.css';
+import ComingSoonMsg from './componentes/comingSoonMsg';
 import ContactBlock from './componentes/contactBlock';
 import CVDownloader from './componentes/cvDownloader';
 import PrincipalText from './componentes/principalText';
@@ -8,7 +9,7 @@ import TopText from './componentes/topText';
 
 /*  MODELO FLEXBOX 
   *  HEADER
-  *
+  *   BLOG
   *   PROJECTS
   *   ASSOCIATED
   *   ABOUT ME
@@ -46,9 +47,9 @@ function App() {
                   "@media:(minWidth:768px)":"flexGrow:0.10",
                  }}
      >
-      <TopText text="Blog" />
+      <TopText text="Blog" children=<ComingSoonMsg/>/>
       <TopText text="Projects" />
-      <TopText text="Associated" />
+      <TopText text="Associated" children=<ComingSoonMsg/>/>
       <TopText text="About Me" />
      </header>
 
