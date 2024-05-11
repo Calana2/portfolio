@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+ .translateY14{
+   transform: translateY(-25%);
+ }
+}

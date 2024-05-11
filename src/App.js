@@ -1,10 +1,11 @@
 import './App.css';
+import AboutMeParagraph from './componentes/aboutMeParagraph';
 import ComingSoonMsg from './componentes/comingSoonMsg';
 import ContactBlock from './componentes/contactBlock';
 import CVDownloader from './componentes/cvDownloader';
 import PrincipalText from './componentes/principalText';
 import RoundedImg from './componentes/roundedImg';
-import SvgLink from './componentes/svgLink';
+import TecnoIcons from './componentes/tecnoIcons';
 import TopText from './componentes/topText';
 
 /*  MODELO FLEXBOX 
@@ -48,9 +49,9 @@ function App() {
                  }}
      >
       <TopText text="Blog" children=<ComingSoonMsg/>/>
-      <TopText text="Projects" />
+      <TopText text="Projects" children=<ComingSoonMsg/>/>
       <TopText text="Associated" children=<ComingSoonMsg/>/>
-      <TopText text="About Me" />
+      <TopText text="About Me" children=<AboutMeParagraph/>/>
      </header>
 
 
@@ -86,17 +87,12 @@ function App() {
           <div className="h-1/6 flex"> </div>
           {/* FOTO */}
           <div className="h-1/2 flex items-center justify-center">
-           <RoundedImg src="../lain.jpg" alt={"gatos"}/>
+           <RoundedImg src="../mainPhoto.jpeg" alt={"gatos"}/>
           </div>
           {/* TECNOLOGIAS */}
           <div className="h-1/3 flex items-center justify-center">
     {/* absolute */}
-           <div className="flex gap-2">
-            <SvgLink src="../typescript.svg" alt="typescript" link="https://typescriptlang.org"/> 
-            <SvgLink src="../react.svg" alt="react" link="https://react.dev"/> 
-            <SvgLink src="../nextjs.svg" alt="next" link="https://nextjs.org"/> 
-            <SvgLink src="../tailwindcss.svg" alt="tailwind" link="https://tailwindcomponents.com"/> 
-           </div>
+           <TecnoIcons/>
           </div>
           {/* RELLENO */}
           <div className="h-1/6 flex"></div>

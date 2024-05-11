@@ -22,7 +22,7 @@ export default function SvgEmail({ src, alt, email }){
 
   return (
     <div>
-      <span style={{ cursor: 'pointer' }} onClick={handleCopyEmail}>
+      <span className="cursor-pointer hover:translateY14" onClick={handleCopyEmail}>
         <img src={src} alt={alt} />
       </span>
 
