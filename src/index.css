@@ -6,4 +6,7 @@
  .translateY14{
    transform: translateY(-25%);
  }
+ .width80P{
+   width: 80%;
+ }
 }
