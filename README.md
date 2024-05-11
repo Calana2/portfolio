@@ -2,11 +2,6 @@
 
 
 
-# -----------
-
-# CRA INFO
-
-# -----------
 
 # Getting Started with Create React App
 
