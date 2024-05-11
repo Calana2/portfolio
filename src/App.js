@@ -87,7 +87,7 @@ function App() {
           <div className="h-1/6 flex"> </div>
           {/* FOTO */}
           <div className="h-1/2 flex items-center justify-center">
-           <RoundedImg src="../mainPhoto.jpeg" alt={"gatos"}/>
+           <RoundedImg src="../portfolio/mainPhoto.jpeg" alt={"gatos"}/>
           </div>
           {/* TECNOLOGIAS */}
           <div className="h-1/3 flex items-center justify-center">
