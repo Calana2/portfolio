@@ -1,12 +1,10 @@
 import './App.css';
-import AboutMeParagraph from './componentes/aboutMeParagraph';
-import ComingSoonMsg from './componentes/comingSoonMsg';
 import ContactBlock from './componentes/contactBlock';
 import CVDownloader from './componentes/cvDownloader';
 import PrincipalText from './componentes/principalText';
 import RoundedImg from './componentes/roundedImg';
 import TecnoIcons from './componentes/tecnoIcons';
-import TopText from './componentes/topText';
+import TopParent from './componentes/topParent';
 
 /*  MODELO FLEXBOX 
   *  HEADER
@@ -48,10 +46,7 @@ function App() {
                   "@media:(minWidth:768px)":"flexGrow:0.10",
                  }}
      >
-      <TopText text="Blog" children=<ComingSoonMsg/>/>
-      <TopText text="Projects" children=<ComingSoonMsg/>/>
-      <TopText text="Associated" children=<ComingSoonMsg/>/>
-      <TopText text="About Me" children=<AboutMeParagraph/>/>
+      <TopParent/>
      </header>
 
 
