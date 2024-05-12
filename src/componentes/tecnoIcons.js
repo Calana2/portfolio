@@ -16,6 +16,8 @@ export default function TecnoIcons(){
             /> 
             <SvgLink src={`${!resize ? '../../portfolio/tailwindcss.svg' : '../../portfolio/tailwindcss64.svg'}`} alt="tailwind" link="https://tailwindcomponents.com"
             /> 
+            <SvgLink src={`${!resize ? '../../portfolio/prisma.svg' : '../../portfolio/prisma64.svg'}`} alt="tailwind" link="https://www.prisma.io"
+            /> 
            </div>
    );
 }
