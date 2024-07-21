@@ -7,10 +7,8 @@ export default function AboutMeParagraph(){
   {/* TECNOLOGIAS */}
    <p className='md:text-lg font-normal text-white text-left'>Fullstack web developer, experience with React frameworks such as
    <span className="text-red-500"> NextJs </span>
-   , 
-   <span className="text-blue-500"> Create-React-App </span>
    and 
-   <span className="text-purple-500"> Gatsby</span>.</p>
+   <span className="text-blue-500"> Create-React-App </span>.</p>
 
   {/* OBJETIVOS */}
    <p className='md:text-lg font-normal text-white text-left'>
