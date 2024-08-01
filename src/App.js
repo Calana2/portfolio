@@ -137,7 +137,7 @@ function App() {
                 }}
      >
       <ContactBlock/>
-      <span className="font-serif italic font-semibold text-white">Protoncala@proton.me</span>
+      <span className="font-serif italic font-semibold text-white">kalcast00@proton.me</span>
     </footer>
 </div>
   );
