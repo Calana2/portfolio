@@ -8,7 +8,7 @@ export default function ContactBlock(){
    <p className="text-white">Contact me:</p>
    <SvgLink src='../../portfolio/linkedin.svg' alt="linkedin" link="https://cu.linkedin.com/in/kevin-cala%C3%B1a-52647a294"/>
    <SvgLink src='../../portfolio/github.svg' alt="github" link="https://github.com/Calana2"/>
-   <SvgEmail  src='../../portfolio/protonmail.svg' alt="protonmail" email="Protoncala@proton.me"/>
+   <SvgEmail  src='../../portfolio/protonmail.svg' alt="protonmail" email="kalcast00@proton.me"/>
   </div>
  );
 }
