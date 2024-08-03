@@ -29,7 +29,7 @@ export default function TopText({text,children}){
   return(
       <div className="h-full w-1/4 text-white flex justify-center items-center gap-2 hover:cursor-pointer">
         <p className="font-light md:text-lg text-sm" onClick={changeFun}>{text}</p>
-        <img src={deployments[text] ? '../../portfolio/up.png' : '../../portfolio/down.png'} alt="_" onClick={changeFun}/> 
+        <img src={deployments[text] ? 'up.png' : 'down.png'} alt="_" onClick={changeFun}/> 
         <div className={`cursor-auto flex justify-center items-center ${deployments[text] ? "desplegar" : isFR ? "hidden replegar" : "replegar"}`}>
          {deployments[text] && children}
         </div> 

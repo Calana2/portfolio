@@ -8,8 +8,8 @@ const [downloaded,setDownloaded] = useState(false);
    <div className="text-white bg-black p-2 text-sm border-2 border-purple-500">
     {!downloaded ? "Download CV" : "Downloaded"}
    </div> 
-   <a href="../../portfolio/resumeEN.pdf" download onClick={()=>{if(!downloaded)setDownloaded(true);}}>
-    <img src="../../portfolio/download.png" alt="_"/>
+   <a href="/resumeEN.pdf" download onClick={()=>{if(!downloaded)setDownloaded(true);}}>
+    <img src="/download.png" alt="_"/>
    </a>
   </div>
  );
