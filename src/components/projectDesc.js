@@ -3,6 +3,19 @@ export default function ProjectDesc() {
   <div className="w-3/4 h-3/4 p-8 items-center aparecer overflow-scroll
    grid grid-cols-1 gap-20 text-purple-600">
 
+   <div className="flex flex-col gap-3 items-center">
+    <h2 className="text-lg font-semibold border-b border-dotted">
+     Portfolio
+    </h2>
+    <img src="/Portfolio.png" alt="blog_img" width={"50%"} height={"50%"}/>
+    <p>{"Host: "}
+     <a href="https://portfolio-six-nu-43.vercel.app/" className="bg-gray-200">
+      https://portfolio-six-nu-43.vercel.app/
+     </a>
+    </p>
+    <p>Tech stack: React, Create-React-App, TailwindCSS</p>
+   </div>
+
 
    <div className="flex flex-col gap-3 items-center">
     <h2 className="text-lg font-semibold border-b border-dotted">
@@ -14,7 +27,7 @@ export default function ProjectDesc() {
       https://cleverchat.onrender.com/
      </a>
     </p>
-    <p>Tech stack: NextJs, React, PostgreSQL, Prisma, Zod, Socket.io</p>
+    <p>Tech stack: NextJs, React, PostgreSQL, Prisma, Socket.io, TailwindCSS, Zod</p>
    </div>
 
    <div className="flex flex-col gap-3 items-center">
@@ -27,7 +40,7 @@ export default function ProjectDesc() {
       https://minipedia-jade.vercel.app/
      </a>
     </p>
-    <p>Tech stack: NextJs, React, Remark, Gray-Matter</p>
+    <p>Tech stack: NextJs, React, TailwindCSS, Remark, Gray-Matter</p>
    </div>
 
    <div className="flex flex-col gap-3 items-center">
@@ -40,8 +53,9 @@ export default function ProjectDesc() {
       https://url-shortener-jade-two.vercel.app/
      </a>
     </p>
-    <p>Tech stack: NextJs, React, PostgreSQL, Prisma, Zod</p>
+    <p>Tech stack: NextJs, React, PostgreSQL, Prisma, TailwindCSS, Zod</p>
    </div>
+
 
   </div>
  )
