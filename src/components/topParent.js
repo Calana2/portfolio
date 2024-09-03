@@ -1,8 +1,9 @@
 import TopText from "./topText";
 import AboutMeParagraph from "./aboutMeParagraph";
-import ComingSoonMsg from "./comingSoonMsg";
-import BlogIframe from "./blogIframe"
+//import ComingSoonMsg from "./comingSoonMsg";
+import ProjectDesc from "./projectDesc"
 import ProjectReferencer from "./projectReferencer"
+import AssociatedReferencer from "./associatedReferencer"
 import { createContext, useState } from "react";
 
 
@@ -20,15 +21,15 @@ export default function TopParent(){
  return(
      <div className="w-full h-full flex">
        <deployContext.Provider value={{deployments, setDeployments}}>
-        <TopText text="Blog" children=<BlogIframe/>/>
+        <TopText text="Projects" children=<ProjectDesc/>/>
        </deployContext.Provider>    
 
        <deployContext.Provider value={{deployments, setDeployments}}>
-        <TopText text="Projects" children=<ProjectReferencer/>/>
+        <TopText text="Repositories" children=<ProjectReferencer/>/>
        </deployContext.Provider>    
 
        <deployContext.Provider value={{deployments, setDeployments}}>
-        <TopText text="Associated" children=<ComingSoonMsg/>/>
+        <TopText text="Associated" children=<AssociatedReferencer/>/>
        </deployContext.Provider>    
 
        <deployContext.Provider value={{deployments, setDeployments}}>

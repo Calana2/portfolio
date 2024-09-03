@@ -1,15 +1,15 @@
 import './App.css';
-import ContactBlock from './componentes/contactBlock';
-import CVDownloader from './componentes/cvDownloader';
-import PrincipalText from './componentes/principalText';
-import RoundedImg from './componentes/roundedImg';
-import TecnoIcons from './componentes/tecnoIcons';
-import TopParent from './componentes/topParent';
+import ContactBlock from './components/contactBlock';
+import CVDownloader from './components/cvDownloader';
+import PrincipalText from './components/principalText';
+import RoundedImg from './components/roundedImg';
+import TecnoIcons from './components/tecnoIcons';
+import TopParent from './components/topParent';
 
 /*  MODELO FLEXBOX 
   *  HEADER
-  *   BLOG
   *   PROJECTS
+  *   REPOS
   *   ASSOCIATED
   *   ABOUT ME
   *  MAIN
