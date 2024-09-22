@@ -9,7 +9,7 @@ export default function ProjectDesc() {
     </h2>
     <img src="/Portfolio.png" alt="blog_img" width={"50%"} height={"50%"}/>
     <p>{"Host: "}
-     <a href="https://portfolio-six-nu-43.vercel.app/" className="bg-gray-200">
+     <a href="https://portfolio-six-nu-43.vercel.app/" className="bg-purple-600 text-white px-1 shadow-purple-600 shadow-md">
       https://portfolio-six-nu-43.vercel.app/
      </a>
     </p>
@@ -23,7 +23,7 @@ export default function ProjectDesc() {
     </h2>
     <img src="/Chat_Cleverchat.png" alt="chat_img" width={"50%"} height={"50%"}/>
     <p>{"Host: "}
-     <a href="https://cleverchat.onrender.com/" className="bg-gray-200">
+     <a href="https://cleverchat.onrender.com/" className="bg-purple-600 text-white px-1 shadow-purple-600 shadow-md">
       https://cleverchat.onrender.com/
      </a>
     </p>
@@ -36,7 +36,7 @@ export default function ProjectDesc() {
     </h2>
     <img src="/Blog_Minipedia.png" alt="short_img" width={"50%"} height={"50%"}/>
     <p>{"Host: "}
-     <a href="https://minipedia-jade.vercel.app/" className="bg-gray-200">
+     <a href="https://minipedia-jade.vercel.app/" className="bg-purple-600 text-white px-1 shadow-purple-600 shadow-md">
       https://minipedia-jade.vercel.app/
      </a>
     </p>
@@ -49,7 +49,7 @@ export default function ProjectDesc() {
     </h2>
     <img src="/UrlShortener_Kurl.png" alt="blog_img" width={"50%"} height={"50%"}/>
     <p>{"Host: "}
-     <a href="https://url-shortener-jade-two.vercel.app/" className="bg-gray-200">
+     <a href="https://url-shortener-jade-two.vercel.app/" className="bg-purple-600 text-white px-1 shadow-purple-600 shadow-md">
       https://url-shortener-jade-two.vercel.app/
      </a>
     </p>
